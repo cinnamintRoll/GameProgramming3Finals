@@ -17,21 +17,23 @@ public class EnemySpawner : MonoBehaviour
     public List<EnemyType> enemyTypes;
     public float baseSpawnRate = 5f;
     public float spawnRadius = 5f;
-    public float spawnRateMultiplier = 1f; //Multiplier to adjust spawn rate over time
+    public float spawnRateMultiplier = 1f; // Multiplier to adjust spawn rate over time
+    public Transform playerTransform;
     public Vector2 playerOffset;
+    public GameObject enemyContainer; // Reference to the container GameObject
 
     private float nextSpawnTime = 0f;
-    private Transform playerTransform;
 
     void Start()
     {
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        enemyContainer = new GameObject("EnemyContainer"); // Create an empty GameObject for enemies
     }
 
     void Update()
     {
         transform.position = (Vector2)playerTransform.position + playerOffset;
-        
+
         if (Time.time >= nextSpawnTime)
         {
             SpawnEnemy();
@@ -45,7 +47,8 @@ public class EnemySpawner : MonoBehaviour
         if (randomEnemyType != null)
         {
             Vector2 randomPosition = GetRandomSpawnPosition();
-            Instantiate(randomEnemyType.prefab, randomPosition, Quaternion.identity);
+            GameObject newEnemy = Instantiate(randomEnemyType.prefab, randomPosition, Quaternion.identity);
+            newEnemy.transform.SetParent(enemyContainer.transform); // Set the parent of the spawned enemy to the container
         }
     }
 
@@ -67,20 +70,20 @@ public class EnemySpawner : MonoBehaviour
         foreach (EnemyType enemyType in enemyTypes)
         {
             randomValue -= enemyType.spawnRate;
-            if(randomValue <= 0f)
+            if (randomValue <= 0f)
             {
                 return enemyType;
             }
         }
 
-        return null; //not likely: to handle errors
+        return null; // Not likely: to handle errors
     }
 
     Vector2 GetRandomSpawnPosition()
     {
         float randomAngle = UnityEngine.Random.Range(0f, Mathf.PI * 2f);
-        float spawnX = transform.position.x + Mathf.Cos(randomAngle) + spawnRadius;
-        float spawnY = transform.position.y + Mathf.Cos(randomAngle) + spawnRadius;
+        float spawnX = transform.position.x + Mathf.Cos(randomAngle) * spawnRadius;
+        float spawnY = transform.position.y + Mathf.Sin(randomAngle) * spawnRadius;
         return new Vector2(spawnX, spawnY);
     }
 
