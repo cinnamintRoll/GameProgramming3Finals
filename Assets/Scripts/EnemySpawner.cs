@@ -17,17 +17,20 @@ public class EnemySpawner : MonoBehaviour
     public List<EnemyType> enemyTypes;
     public float baseSpawnRate = 5f;
     public float spawnRadius = 5f;
-    public float spawnRateMultiplier = 1f; // Multiplier to adjust spawn rate over time
+    public float spawnRateMultiplier = 0.04f; // Multiplier to adjust spawn rate over time
+    public float multiplierInterval = 30f; 
     public Transform playerTransform;
     public Vector2 playerOffset;
     public GameObject enemyContainer; // Reference to the container GameObject
 
     private float nextSpawnTime = 0f;
+    private float nextMultiplierActivationTime = 0f;
 
     void Start()
     {
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         enemyContainer = new GameObject("EnemyContainer"); // Create an empty GameObject for enemies
+        nextMultiplierActivationTime = Time.time + multiplierInterval; // Set the initial activation time
     }
 
     void Update()
@@ -38,6 +41,11 @@ public class EnemySpawner : MonoBehaviour
         {
             SpawnEnemy();
             CalculateNextSpawnTime();
+        }
+
+        if (Time.time >= nextMultiplierActivationTime)
+        {
+            ActivateSpawnRateMultiplier();
         }
     }
 
@@ -91,6 +99,12 @@ public class EnemySpawner : MonoBehaviour
     {
         float spawnRate = baseSpawnRate * spawnRateMultiplier;
         nextSpawnTime = Time.time + 1f / spawnRate;
+    }
+
+    void ActivateSpawnRateMultiplier()
+    {
+        spawnRateMultiplier *= 2; 
+        nextMultiplierActivationTime = Time.time + multiplierInterval; // Set the next activation time
     }
 
     void OnDrawGizmosSelected()
