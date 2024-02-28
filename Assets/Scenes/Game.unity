@@ -310,7 +310,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &775530164
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -440,7 +440,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1317476821
 RectTransform:
   m_ObjectHideFlags: 0
@@ -557,11 +557,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317476820}
   m_CullTransparentMesh: 1
-<<<<<<< Updated upstream
 --- !u!1 &1926484111
-=======
---- !u!1 &1912738117
->>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -569,60 +565,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< Updated upstream
   - component: {fileID: 1926484112}
   - component: {fileID: 1926484113}
   m_Layer: 0
   m_Name: Pen Controller
-=======
-  - component: {fileID: 1912738118}
-  - component: {fileID: 1912738119}
-  m_Layer: 0
-  m_Name: Spawner
->>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< Updated upstream
 --- !u!4 &1926484112
-=======
---- !u!4 &1912738118
->>>>>>> Stashed changes
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 1926484111}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-=======
-  m_GameObject: {fileID: 1912738117}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
->>>>>>> Stashed changes
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-<<<<<<< Updated upstream
   m_Father: {fileID: 7173137024709044360}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1926484113
-=======
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1912738119
->>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 1926484111}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -634,31 +606,6 @@ MonoBehaviour:
   speed: 10
   cooldownDuration: 2
   pierce: 0
-=======
-  m_GameObject: {fileID: 1912738117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a3453aa72260d94099d0238dfd38fcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyTypes:
-  - typeName: Base
-    prefab: {fileID: 7037041609309986757, guid: 10181de0f5988ef4ab772a69cbdb65a6, type: 3}
-    spawnRate: 1
-  - typeName: Speedy mfs
-    prefab: {fileID: 7922997081207064867, guid: c95cdc5be469e9a459922d18b54e4250, type: 3}
-    spawnRate: 0.5
-  - typeName: Type 3
-    prefab: {fileID: 5735759903012415827, guid: 844e794308bf44540b10da705dcbd4bf, type: 3}
-    spawnRate: 0.6
-  - typeName: Type 4
-    prefab: {fileID: 28843270350170238, guid: a2473e0890b0daa4a8d6b50cf8ffe095, type: 3}
-    spawnRate: 0.01
-  baseSpawnRate: 2
-  spawnRadius: 3
-  spawnRateMultiplier: 0.5
-  playerOffset: {x: 0, y: 0}
->>>>>>> Stashed changes
 --- !u!1001 &2338449965775760117
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -685,14 +632,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3122393534182631411, guid: 8968b56d4611c9942bbc62fc7cf60b51, type: 3}
       propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3122393534182631411, guid: 8968b56d4611c9942bbc62fc7cf60b51, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3122393534182631411, guid: 8968b56d4611c9942bbc62fc7cf60b51, type: 3}
-      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7340106218598607296, guid: 8968b56d4611c9942bbc62fc7cf60b51, type: 3}
@@ -770,14 +709,6 @@ PrefabInstance:
     - target: {fileID: 138609363006856177, guid: f999aa1935a1ae94bbb565bebe40813e, type: 3}
       propertyPath: m_Name
       value: Main Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 138609363006856177, guid: f999aa1935a1ae94bbb565bebe40813e, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 138609363006856177, guid: f999aa1935a1ae94bbb565bebe40813e, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5520085334845552176, guid: f999aa1935a1ae94bbb565bebe40813e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -901,7 +832,6 @@ SceneRoots:
   - {fileID: 3389784563929802328}
   - {fileID: 2338449965775760117}
   - {fileID: 775530167}
-  - {fileID: 1912738118}
   - {fileID: 79377053}
   - {fileID: 581127343}
   - {fileID: 3443676044509330098}
