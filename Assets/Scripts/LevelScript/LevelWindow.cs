@@ -41,9 +41,8 @@ public class LevelWindow : MonoBehaviour
     {
         SetExperienceBarSize(experienceSystem.GetExperienceNormalized());
     }
-    public void AddExperienceOnClick()
+    public void AddExperience(int xp)
     {
-        // Add 5 experience points
-        experienceSystem.AddExperience(5);
+        experienceSystem.AddExperience(xp);
     }
 }
