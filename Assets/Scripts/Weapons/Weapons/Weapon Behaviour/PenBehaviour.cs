@@ -4,7 +4,6 @@ public class PenBehaviour : ProjectileWeaponBehaviour
 {
 
     PenController pc;
-
     protected override void Start()
     {
         base.Start();
