@@ -16,14 +16,4 @@ public class EnemyController : MonoBehaviour
     {
         
     }
-
-    public void Die()
-    {
-        //things left to add...(ye I got lazy) - Shayne
-        // Handle enemy death (example, play death animation, spawn particles, etc.) no asset yet
-        // ...
-
-        // Add XP to the player
-        ExperienceSystem.AddXP();
-    }
 }
