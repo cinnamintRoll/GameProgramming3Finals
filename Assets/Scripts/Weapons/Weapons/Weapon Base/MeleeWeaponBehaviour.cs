@@ -1,7 +1,7 @@
 using UnityEngine;
 
 /// <summary>
-/// Base script of all melee behaviours [To be placed on a prefab of a weapon that is melee
+/// Base script of all melee behaviours [To be placed on a prefab of a weapon that is melee]
 /// </summary>
 public class MeleeWeaponBehaviour : MonoBehaviour
 {
