@@ -5,11 +5,15 @@ using UnityEngine;
 
 public class Testing : MonoBehaviour
 {
+    Inventory playerInventory;
+    public string itemName;
+    public int itemID;
+    public int quantity = 1;
     [SerializeField] private LevelWindow levelWindow;
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerInventory = GameObject.FindWithTag("Player").GetComponent<Inventory>();
     }
 
     // Update is called once per frame
@@ -22,5 +26,35 @@ public class Testing : MonoBehaviour
     {
         ExperienceSystem experienceSystem = new ExperienceSystem();
         levelWindow.SetExperienceSystem(experienceSystem);
+    }
+    public void Weapon6()
+    {
+        Item itemToAdd = new Item(itemName, 6, quantity);
+        playerInventory.AddItem(itemToAdd);
+    }
+    public void Weapon5()
+    {
+        Item itemToAdd = new Item(itemName, 5, quantity);
+        playerInventory.AddItem(itemToAdd);
+    }
+    public void Weapon4()
+    {
+        Item itemToAdd = new Item(itemName, 4, quantity);
+        playerInventory.AddItem(itemToAdd);
+    }
+    public void Weapon3()
+    {
+        Item itemToAdd = new Item(itemName, 3, quantity);
+        playerInventory.AddItem(itemToAdd);
+    }
+    public void Weapon2()
+    {
+        Item itemToAdd = new Item(itemName, 2, quantity);
+        playerInventory.AddItem(itemToAdd);
+    }
+    public void Weapon1()
+    {
+        Item itemToAdd = new Item(itemName, 1, quantity);
+        playerInventory.AddItem(itemToAdd);
     }
 }
