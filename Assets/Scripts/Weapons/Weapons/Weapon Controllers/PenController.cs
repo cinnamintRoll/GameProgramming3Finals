@@ -7,7 +7,6 @@ public class PenController : WeaponController
     {
         base.Start();
         playerInventory = GameObject.FindWithTag("Player").GetComponent<Inventory>();
-        
     }
 
     protected override void Attack()
