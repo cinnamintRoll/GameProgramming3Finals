@@ -113,6 +113,7 @@ GameObject:
   - component: {fileID: 38788702306927658}
   - component: {fileID: 8391848958307618972}
   - component: {fileID: -1084256023495633803}
+  - component: {fileID: 6286697656645551385}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -130,7 +131,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.03573835, y: -0.08382827, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6606474686728182427}
@@ -183,8 +184,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0, g: 0.67014647, b: 1, a: 1}
+  m_Sprite: {fileID: 1597632555, guid: 5841dd01d13a30e4693a40cd2b0e73fa, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -253,18 +254,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.000000059604645, y: 0.0063556433}
+  m_Offset: {x: -0.0068311095, y: -0.00047564507}
   m_SpriteTilingProperty:
-    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
+    oldSize: {x: 1.32, y: 2.4}
     newSize: {x: 0.2, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.14688247, y: 0.15580654}
+  m_Size: {x: 1.4174806, y: 2.504202}
   m_EdgeRadius: 0
 --- !u!114 &38788702306927658
 MonoBehaviour:
@@ -293,7 +294,7 @@ Animator:
   m_GameObject: {fileID: 3122393534182631411}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1881fd024f33f3c42972a950f82745ef, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2a661078983f69d4592cb8d3d1957971, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -317,6 +318,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryList: []
+--- !u!114 &6286697656645551385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3122393534182631411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aceb249a6bd2d314293b27ac1fec63c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3416620824241072154
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,3 +570,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de17be8f2f5a4aa4bab33a6adf56362d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefab: {fileID: 8021749566142005958, guid: 5bfde7f2d51cd4540b52e58ef52ae82d, type: 3}
+  damage: 1
+  speed: 2
+  cooldownDuration: 2
+  pierce: 0

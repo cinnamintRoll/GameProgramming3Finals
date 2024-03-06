@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using System;
 using UnityEngine;
 
@@ -13,21 +10,25 @@ public class ExperienceSystem : MonoBehaviour
     private int experience;
     private int experienceToNextLevel;
 
-    public ExperienceSystem() {
+    // Use Awake for initialization
+    void Awake()
+    {
         level = 0;
         experience = 0;
         experienceToNextLevel = 100;
     }
+
     void Start()
     {
-
+        // Your additional initialization code goes here
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        // Your update logic goes here
     }
+
     public void AddExperience(int amount)
     {
         experience += amount;
