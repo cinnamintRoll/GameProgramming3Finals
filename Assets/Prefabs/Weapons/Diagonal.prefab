@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 962921419276178322}
   m_Layer: 0
   m_Name: Diagonal
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,8 +98,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df5afbdaa83ea074ab8629d1992b8d44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  direction: {x: 0, y: 1}
   destroyAfterSeconds: 2
 --- !u!50 &962921419276178322
 Rigidbody2D:

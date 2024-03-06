@@ -2,17 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ThrowAOEController : MonoBehaviour
+public class ThrowAOEController : WeaponController
 {
-    // Start is called before the first frame update
-    void Start()
+    private Inventory playerInventory;
+    protected override void Start()
     {
-        
+        base.Start();
+        playerInventory = GameObject.FindWithTag("Player").GetComponent<Inventory>();
+
     }
 
-    // Update is called once per frame
-    void Update()
+    protected override void Attack()
     {
-        
+        int itemIDToCheck = 7; // Replace 123 with the actual item ID you want to check
+        bool itemExists = playerInventory.CheckItem(itemIDToCheck);
+
+        if (itemExists)
+        {
+            base.Attack();
+            GameObject spawnedThrowAOE = Instantiate(prefab);
+            spawnedThrowAOE.transform.position = transform.position;
+
+        }
     }
 }
