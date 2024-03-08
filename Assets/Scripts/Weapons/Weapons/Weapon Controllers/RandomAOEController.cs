@@ -2,25 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ThrowAOEController : WeaponController
+public class RandomAOEController : WeaponController
 {
+    private Transform enemy;
     private Inventory playerInventory;
     protected override void Start()
     {
         base.Start();
         playerInventory = GameObject.FindWithTag("Player").GetComponent<Inventory>();
+
     }
 
     protected override void Attack()
     {
-        int itemIDToCheck = 7; // Replace 123 with the actual item ID you want to check
+        int itemIDToCheck = 9; // Replace 123 with the actual item ID you want to check
         bool itemExists = playerInventory.CheckItem(itemIDToCheck);
+        enemy = GameObject.FindGameObjectWithTag("Enemy").transform;
 
         if (itemExists)
         {
             base.Attack();
-            GameObject spawnedHoming = Instantiate(prefab);
-            spawnedHoming.transform.position = transform.position;
+            GameObject spawnedRandomAOE = Instantiate(prefab);
+            spawnedRandomAOE.transform.position = enemy.transform.position;
+
         }
     }
 }

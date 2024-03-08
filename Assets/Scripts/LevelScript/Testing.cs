@@ -27,6 +27,32 @@ public class Testing : MonoBehaviour
         ExperienceSystem experienceSystem = new ExperienceSystem();
         levelWindow.SetExperienceSystem(experienceSystem);
     }
+
+    public void Weapon12()
+    {
+        Item itemToAdd = new Item(itemName, 12, quantity);
+        playerInventory.AddItem(itemToAdd);
+    }
+    public void Weapon11()
+    {
+        Item itemToAdd = new Item(itemName, 11, quantity);
+        playerInventory.AddItem(itemToAdd);
+    }
+    public void Weapon10()
+    {
+        Item itemToAdd = new Item(itemName, 10, quantity);
+        playerInventory.AddItem(itemToAdd);
+    }
+    public void Weapon9()
+    {
+        Item itemToAdd = new Item(itemName, 9, quantity);
+        playerInventory.AddItem(itemToAdd);
+    }
+    public void Weapon8()
+    {
+        Item itemToAdd = new Item(itemName, 8, quantity);
+        playerInventory.AddItem(itemToAdd);
+    }
     public void Weapon7()
     {
         Item itemToAdd = new Item(itemName, 7, quantity);

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4118360882180499749}
   - component: {fileID: 4934450928996469280}
   - component: {fileID: 5069920685936346813}
+  - component: {fileID: -6046365476315070933}
   m_Layer: 0
   m_Name: ThrowAOEProjectile
   m_TagString: Untagged
@@ -98,9 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f420b839736afc847acbf0e7c9e7f70d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throwForceUpwards: 5
-  throwForceForward: 10
-  detectionRadius: 100
+  speed: 5
+  destroyAfterSeconds: 2
+  ThrowAOE: {fileID: 3888327439383966240, guid: 6a2b486a7be10b94db130893c92f4f40, type: 3}
 --- !u!50 &5069920685936346813
 Rigidbody2D:
   serializedVersion: 4
@@ -128,3 +129,48 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &-6046365476315070933
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8591073713521459160}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0

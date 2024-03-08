@@ -4,66 +4,30 @@ using UnityEngine;
 
 public class ThrowAOEProjectileBehavior : MonoBehaviour
 {
-    public float throwForceUpwards = 10f;
-    public float throwForceForward = 5f;
-    public float detectionRadius = 10f;
+    public float speed = 5f;
+    private Transform enemy;
+    private Vector2 targetDirection;
+    public float destroyAfterSeconds;
+    public GameObject ThrowAOE;
 
-    private Rigidbody2D rb;
-    private GameObject nearestEnemy;
-    private bool hasLanded = false;
-
-    void Start()
+    private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-
-        // Throw the projectile upwards and slightly forward
-        if (rb != null)
-        {
-            Vector2 throwDirection = transform.up + transform.right.normalized * 0.5f; // Adjust the forward direction here
-            rb.AddForce(throwDirection * throwForceUpwards, ForceMode2D.Impulse);
-        }
+        enemy = GameObject.FindGameObjectWithTag("Enemy").transform;
+        Destroy(gameObject, destroyAfterSeconds);
+        targetDirection = (enemy.position - transform.position).normalized;
     }
 
-    void Update()
+    private void Update()
     {
-        // If the projectile has landed and an enemy is nearby, start moving towards it
-        if (hasLanded && nearestEnemy != null && rb != null)
-        {
-            Vector2 direction = (nearestEnemy.transform.position - transform.position).normalized;
-            rb.velocity = direction * throwForceForward;
-        }
+        transform.Translate(targetDirection * speed * Time.deltaTime, Space.World);
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!hasLanded)
+        if (collision.gameObject.CompareTag("Enemy"))
         {
-            // Projectile has landed, find the nearest enemy
-            hasLanded = true;
-            rb.velocity = Vector2.zero; // Stop the projectile
-            rb.gravityScale = 1; // Enable gravity
-            FindNearestEnemy();
-        }
-    }
-
-    void FindNearestEnemy()
-    {
-        // Find all game objects with the tag "Enemy"
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-
-        // Initialize variables to store the closest enemy and its distance
-        nearestEnemy = null;
-        float closestDistance = Mathf.Infinity;
-
-        // Loop through each enemy to find the nearest one
-        foreach (GameObject enemy in enemies)
-        {
-            float distanceToEnemy = Vector2.Distance(transform.position, enemy.transform.position);
-            if (distanceToEnemy < closestDistance)
-            {
-                nearestEnemy = enemy;
-                closestDistance = distanceToEnemy;
-            }
+            Instantiate(ThrowAOE, collision.contacts[0].point, Quaternion.identity);
+            Destroy(gameObject);
         }
     }
 }
