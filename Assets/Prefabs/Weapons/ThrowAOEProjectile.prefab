@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   destroyAfterSeconds: 2
-  ThrowAOE: {fileID: 3888327439383966240, guid: 6a2b486a7be10b94db130893c92f4f40, type: 3}
+  ThrowAOE: {fileID: 4860554433900299691, guid: aaec04fabc31f52498bd06ae7155484b, type: 3}
 --- !u!50 &5069920685936346813
 Rigidbody2D:
   serializedVersion: 4
