@@ -13,6 +13,7 @@ public class WeaponController : MonoBehaviour
     public float speed;
     public float cooldownDuration;
     float currentCooldown;
+    float originalCooldownDuration;
     public int pierce;
 
     protected PlayerMovement pm;
@@ -22,6 +23,7 @@ public class WeaponController : MonoBehaviour
     {
         pm = FindObjectOfType<PlayerMovement>();
         currentCooldown = cooldownDuration; //At the start set the current cooldown to be cooldown duration
+        originalCooldownDuration = currentCooldown;
     }
 
     protected virtual void Update()
@@ -36,5 +38,17 @@ public class WeaponController : MonoBehaviour
     protected virtual void Attack()
     {
         currentCooldown = cooldownDuration;
+    }
+
+    public void CooldownDebuff(float amount)
+    {
+        cooldownDuration += amount;
+        currentCooldown = cooldownDuration;
+    }
+
+    public void ResetCooldown()
+    {
+        cooldownDuration = originalCooldownDuration;
+        //Debug.Log("Cooldown reset to original: " + originalCooldownDuration);
     }
 }
