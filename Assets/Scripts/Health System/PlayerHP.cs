@@ -33,6 +33,7 @@ public class PlayerHP : HealthSystem
     protected override void Die()
     {
         base.Die();
+        Destroy(gameObject);
         if (OnPlayerHealthChanged != null) OnPlayerHealthChanged(0, maxHP);
 
     }
@@ -41,7 +42,7 @@ public class PlayerHP : HealthSystem
 
     private void OnCollisionStay2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Enemy"))
+       if (other.gameObject.CompareTag("Enemy"))
         {
             EnemyAI enemy = other.gameObject.GetComponent<EnemyAI>(); //Temporary
 
@@ -59,11 +60,11 @@ public class PlayerHP : HealthSystem
 
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+   /*private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("TempHeal"))
         {
             Heal(2);
         }
-    }
+    }*/
 }

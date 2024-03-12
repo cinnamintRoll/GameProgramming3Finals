@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public float lastVerticalVector;
     [HideInInspector]
     public Vector2 lastMovedVector;
+    private float originalMoveSpeed;
 
     //References
     Rigidbody2D rb;
@@ -20,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         lastMovedVector = new Vector2(1, 0f); //If we don't do this and game starts up and don't move, the projectile weapon will have no momentum
+        originalMoveSpeed = moveSpeed;
     }
 
     void Update()
@@ -60,5 +62,15 @@ public class PlayerMovement : MonoBehaviour
     void Move()
     {
         rb.velocity = new Vector2(moveDir.x * moveSpeed, moveDir.y * moveSpeed);
+    }
+
+    public void ApplySlowDebuff(float slowFactor)
+    {
+        moveSpeed *= slowFactor;
+    }
+
+    public void ResetSpeed()
+    {
+        moveSpeed = originalMoveSpeed;
     }
 }
