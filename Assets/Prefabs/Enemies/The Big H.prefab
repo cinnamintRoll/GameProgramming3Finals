@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8736591345954960287}
   - component: {fileID: 4438101188210725487}
   m_Layer: 0
-  m_Name: H_0
+  m_Name: The Big H
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
