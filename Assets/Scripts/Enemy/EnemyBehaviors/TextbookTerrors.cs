@@ -5,13 +5,16 @@ using UnityEngine;
 public class TextbookTerrors : MonoBehaviour
 {
     public GameObject objectToThrow;
+    public float questionDamage = 3f;
     public Transform player;
     public float throwForce = 10f;
     public float throwCooldown = 3f;
     public float detectionRadius = 8f;
     public LayerMask playerLayer;
 
+
     private float lastThrowTime;
+
 
     void Update()
     {
@@ -46,6 +49,7 @@ public class TextbookTerrors : MonoBehaviour
     void Throw()
     {
         GameObject thrownObject = Instantiate(objectToThrow, transform.position, Quaternion.identity);
+        thrownObject.GetComponent<Questions>().damage = questionDamage;
         Vector2 direction = (player.position - transform.position).normalized;
         Rigidbody2D objectBody = thrownObject.GetComponent<Rigidbody2D>();
 

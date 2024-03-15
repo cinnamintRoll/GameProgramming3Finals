@@ -6,7 +6,7 @@ public class CafeteriaCreature : MonoBehaviour
 {
     public float healAmount = 0.2f;
     public float damageAmount = 1f;
-    private void OnCollisionStay2D(Collision2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         PlayerHP player = other.gameObject.GetComponent<PlayerHP>();
 

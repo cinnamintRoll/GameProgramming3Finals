@@ -38,6 +38,12 @@ public class PlayerHP : HealthSystem
 
     }
 
+    public void ReduceToMinimumHealth()
+    {
+        currentHP = 1;
+        if (OnPlayerHealthChanged != null) OnPlayerHealthChanged(currentHP, maxHP);
+    }
+
 
 
     private void OnCollisionStay2D(Collision2D other)

@@ -15,7 +15,7 @@ public class HpScript : MonoBehaviour
     void Start()
     {
 
-        Debug.Log("HpScript Start method called.");
+        //Debug.Log("HpScript Start method called.");
         healthSystem = GetComponent<PlayerHP>();
 
         healthPoints = healthSystem.currentHP;
@@ -37,7 +37,7 @@ public class HpScript : MonoBehaviour
 
     void UpdateHealthPoints(float currentHP, float maxHP)
     {
-        Debug.Log("Updating Health Points. Current HP: " + currentHP + ", Max HP: " + maxHP);
+        //Debug.Log("Updating Health Points. Current HP: " + currentHP + ", Max HP: " + maxHP);
         healthPoints = currentHP;
     }
 }

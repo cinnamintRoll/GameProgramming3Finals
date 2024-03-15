@@ -1,8 +1,8 @@
- using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Questions : MonoBehaviour
+public class Comments : MonoBehaviour
 {
     public float damage;
 
