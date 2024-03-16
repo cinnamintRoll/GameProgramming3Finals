@@ -7,11 +7,13 @@ TagManager:
   - Enemy
   - XP
   - Bullet
+  - TempDMG
+  - TempHeal
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - 

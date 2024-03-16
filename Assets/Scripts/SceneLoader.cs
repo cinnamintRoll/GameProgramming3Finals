@@ -3,14 +3,19 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("Main Menu"); 
+    }
     public void LoadGameScene()
     {
-        SceneManager.LoadScene(1); 
+        SceneManager.LoadScene("Game");
     }
 
     public void LoadOptionsScene()
     {
-        SceneManager.LoadScene(2); 
+        SceneManager.LoadScene("Options Menu"); 
     }
 
     public void QuitGame()
