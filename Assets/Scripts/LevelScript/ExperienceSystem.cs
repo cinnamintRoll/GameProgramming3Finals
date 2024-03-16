@@ -31,6 +31,7 @@ public class ExperienceSystem : MonoBehaviour
 
     public void AddExperience(int amount)
     {
+
         experience += amount;
         if (experience >= experienceToNextLevel)
         {

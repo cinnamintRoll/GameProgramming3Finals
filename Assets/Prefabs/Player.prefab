@@ -1,5 +1,49 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &96540369860994981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4480692561437156657}
+  - component: {fileID: 3352293963542627939}
+  m_Layer: 0
+  m_Name: XPUpController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4480692561437156657
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96540369860994981}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5467001394692651913}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3352293963542627939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96540369860994981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a27493627fbee84fa9678804d90424e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &223465514968910133
 GameObject:
   m_ObjectHideFlags: 0
@@ -49,6 +93,8 @@ MonoBehaviour:
   speed: 0
   cooldownDuration: 3
   pierce: 0
+  duration: 0
+  AOE: 0
 --- !u!1 &860569972195616163
 GameObject:
   m_ObjectHideFlags: 0
@@ -98,6 +144,8 @@ MonoBehaviour:
   speed: 2
   cooldownDuration: 2
   pierce: 0
+  duration: 0
+  AOE: 0
 --- !u!1 &1009309535470410806
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,6 +195,8 @@ MonoBehaviour:
   speed: 10
   cooldownDuration: 2
   pierce: 0
+  duration: 0
+  AOE: 0
 --- !u!1 &1445514852979259214
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,6 +246,8 @@ MonoBehaviour:
   speed: 2
   cooldownDuration: 2
   pierce: 0
+  duration: 0
+  AOE: 0
 --- !u!1 &2761023405058037260
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,6 +602,8 @@ MonoBehaviour:
   speed: 5
   cooldownDuration: 2
   pierce: 0
+  duration: 0
+  AOE: 0
 --- !u!1 &5595362111020897921
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,6 +653,8 @@ MonoBehaviour:
   speed: 2
   cooldownDuration: 2
   pierce: 3
+  duration: 0
+  AOE: 0
 --- !u!1 &5833094995458072452
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,6 +704,8 @@ MonoBehaviour:
   speed: 0
   cooldownDuration: 2
   pierce: 0
+  duration: 0
+  AOE: 0
 --- !u!1 &6276948790421550121
 GameObject:
   m_ObjectHideFlags: 0
@@ -697,6 +755,8 @@ MonoBehaviour:
   speed: 2
   cooldownDuration: 2
   pierce: 0
+  duration: 0
+  AOE: 0
 --- !u!1 &6306284732049610850
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,6 +806,8 @@ MonoBehaviour:
   speed: 2
   cooldownDuration: 2
   pierce: 0
+  duration: 0
+  AOE: 0
 --- !u!1 &6628661279644833500
 GameObject:
   m_ObjectHideFlags: 0
@@ -795,6 +857,8 @@ MonoBehaviour:
   speed: 0
   cooldownDuration: 1.5
   pierce: 0
+  duration: 0
+  AOE: 0
 --- !u!1 &7604952050431356890
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,6 +908,8 @@ MonoBehaviour:
   speed: 2
   cooldownDuration: 2
   pierce: 0
+  duration: 0
+  AOE: 0
 --- !u!1 &7642514975784166354
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,7 +938,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3.333333, y: 3.333333, z: 3.333333}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4480692561437156657}
   m_Father: {fileID: 8330925472150337815}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7964067645575439714
@@ -924,6 +991,8 @@ MonoBehaviour:
   speed: 1
   cooldownDuration: 2
   pierce: 0
+  duration: 0
+  AOE: 0
 --- !u!1 &7978186231430143547
 GameObject:
   m_ObjectHideFlags: 0
@@ -973,3 +1042,5 @@ MonoBehaviour:
   speed: 2
   cooldownDuration: 2
   pierce: 0
+  duration: 0
+  AOE: 0
