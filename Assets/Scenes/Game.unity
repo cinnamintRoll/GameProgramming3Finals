@@ -5291,18 +5291,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2984130221248671407, guid: 8968b56d4611c9942bbc62fc7cf60b51, type: 3}
-      propertyPath: pierce
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 3122393534182631411, guid: 8968b56d4611c9942bbc62fc7cf60b51, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5346538808550414211, guid: 8968b56d4611c9942bbc62fc7cf60b51, type: 3}
-      propertyPath: prefab
-      value: 
-      objectReference: {fileID: 6620290408571661047, guid: a3044ea71586c1e4caba4781bf7eeaea, type: 3}
     - target: {fileID: 8330925472150337815, guid: 8968b56d4611c9942bbc62fc7cf60b51, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

@@ -2,22 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BombardAOEBehvaior : MonoBehaviour
+public class BombardAOEBehvaior : BombardAOEController
 {
-    public float moveSpeed = 5f;
     public float changeInterval;
-
     private Vector3 randomDirection;
     private float timer;
-    public float destroyAfterSeconds;
 
-    private void Start()
+    protected override void Start()
     {
         ChangeDirection();
-        Destroy(gameObject, destroyAfterSeconds);
+        Destroy(gameObject, duration);
     }
 
-    private void Update()
+    protected override void Update()
     {
         timer += Time.deltaTime;
 
@@ -32,7 +29,7 @@ public class BombardAOEBehvaior : MonoBehaviour
 
     private void ChangeDirection()
     {
-        randomDirection = Random.insideUnitSphere * moveSpeed;
+        randomDirection = Random.insideUnitSphere * speed;
         randomDirection.y = 0; // Ensure movement is only on the XZ plane
     }
 

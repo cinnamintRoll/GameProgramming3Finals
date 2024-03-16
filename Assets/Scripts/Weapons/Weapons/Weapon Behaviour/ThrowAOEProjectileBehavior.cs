@@ -2,22 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ThrowAOEProjectileBehavior : MonoBehaviour
+public class ThrowAOEProjectileBehavior : ThrowAOEController
 {
-    public float speed = 5f;
     private Transform enemy;
     private Vector2 targetDirection;
     public float destroyAfterSeconds;
     public GameObject ThrowAOE;
 
-    private void Start()
+    protected override void Start()
     {
         enemy = GameObject.FindGameObjectWithTag("Enemy").transform;
         Destroy(gameObject, destroyAfterSeconds);
         targetDirection = (enemy.position - transform.position).normalized;
     }
 
-    private void Update()
+    protected override void Update()
     {
         transform.Translate(targetDirection * speed * Time.deltaTime, Space.World);
     }

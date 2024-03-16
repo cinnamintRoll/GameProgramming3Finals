@@ -2,26 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BoomerangBehavior : MonoBehaviour
+public class BoomerangBehavior : BoomerangController
 {
-    public float speed = 10f;
     public float returnSpeedMultiplier = 2f;
     public float maxDistance = 20f;
-    public int maxEnemiesToPass = 3; // Number of enemies to pass before returning
-
     private Transform target;
     private Vector3 direction;
     private Vector3 initialPosition;
     private bool returning = false;
     private int enemiesPassed = 0;
 
-    private void Start()
+    protected override void Start()
     {
         initialPosition = transform.position;
         FindNearestEnemy();
     }
 
-    private void Update()
+    protected override void Update()
     {
         if (!returning)
         {
@@ -33,7 +30,7 @@ public class BoomerangBehavior : MonoBehaviour
                 if (Vector3.Distance(transform.position, target.position) <= 0.1f)
                 {
                     enemiesPassed++;
-                    if (enemiesPassed >= maxEnemiesToPass)
+                    if (enemiesPassed >= pierce)
                     {
                         returning = true;
                     }
