@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: -1084256023495633803}
   - component: {fileID: 6286697656645551385}
   - component: {fileID: 6079743945647029425}
-  - component: {fileID: 3966573934516227879}
+  - component: {fileID: 9213243475408195232}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -452,7 +452,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.32, y: 2.4}
   m_EdgeRadius: 0
---- !u!114 &3966573934516227879
+--- !u!114 &9213243475408195232
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -461,13 +461,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 3122393534182631411}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35ccc08ab71458e4387cffe91254481b, type: 3}
+  m_Script: {fileID: 11500000, guid: 26409b0c643b2254592226d3bdb5d4d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthCounter: {fileID: 0}
-  coinsCounter: {fileID: 0}
-  coinCounter: 0
+  healthCount: {fileID: 0}
+  healthMax: {fileID: 0}
+  healthBar: {fileID: 0}
   healthPoints: 0
+  maxHealth: 0
 --- !u!1 &3416620824241072154
 GameObject:
   m_ObjectHideFlags: 0

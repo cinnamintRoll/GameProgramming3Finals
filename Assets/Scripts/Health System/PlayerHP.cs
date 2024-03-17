@@ -5,7 +5,9 @@ using UnityEngine;
 public class PlayerHP : HealthSystem
 {
     public event System.Action<float, float> OnPlayerHealthChanged;
+    public GameOverManager gameOverManager;
     public float damageInterval = 5f;
+
 
     private float timer;
 
@@ -15,6 +17,7 @@ public class PlayerHP : HealthSystem
         base.Start();
         maxHP = baseHP;
         currentHP = maxHP;
+        
     }
 
 
@@ -33,9 +36,22 @@ public class PlayerHP : HealthSystem
     protected override void Die()
     {
         base.Die();
+        if (OnPlayerHealthChanged != null) OnPlayerHealthChanged(0, maxHP);
+        StartCoroutine(DelayedDeath());
+
+        
+
+    }
+
+    IEnumerator DelayedDeath()
+    {
+        yield return new WaitForSeconds(0.1f);
+        if (gameOverManager != null)
+        {
+            gameOverManager.GameOver();
+        }
         Destroy(gameObject);
         if (OnPlayerHealthChanged != null) OnPlayerHealthChanged(0, maxHP);
-
     }
 
     public void ReduceToMinimumHealth()
