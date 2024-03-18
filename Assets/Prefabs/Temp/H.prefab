@@ -208,4 +208,4 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
-  numberOfThrows: 5
+  numberOfThrows: 6

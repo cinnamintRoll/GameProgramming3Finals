@@ -1,28 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour
 {
+    public Text healthCount, healthMax;
     public Image healthBar;
-    public float healthAmount = 100f;
-    // Start is called before the first frame update
+    public float healthPoints;
+    public float maxHealth;
+    
+
+    private PlayerHP healthSystem;
+
     void Start()
     {
-        
+        healthSystem = GetComponent<PlayerHP>();
+        healthPoints = healthSystem.baseHP;
+        maxHealth = healthSystem.maxHP;
+
+        healthCount.text = healthPoints.ToString();
+        healthMax.text = maxHealth.ToString();
+        healthBar.fillAmount = healthPoints / maxHealth;
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
-        if (healthAmount <=0)
+        /*if (healthAmount <=0)
         {
 
         }
 
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.J))
         {
             TakeDamage(20);
         }
@@ -30,10 +42,24 @@ public class HealthManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Heal(5);
-        }
+        }*/
+
+        healthSystem.OnPlayerHealthChanged += UpdateHealthInfo;
+
+        healthCount.text = healthPoints.ToString();
+        healthMax.text = maxHealth.ToString();
+
+        healthBar.fillAmount = healthPoints / maxHealth;
+
     }
 
-    public void TakeDamage(float damage)
+    void UpdateHealthInfo(float currentHP, float maxHP)
+    {
+        healthPoints = currentHP;
+        maxHealth = maxHP;
+    }
+
+    /*public void TakeDamage(float damage)
     {
         healthAmount -= damage;
         healthBar.fillAmount = healthAmount / 100f;
@@ -45,5 +71,5 @@ public class HealthManager : MonoBehaviour
         healthAmount = Mathf.Clamp(healthAmount, 0, 100);
 
         healthBar.fillAmount = healthAmount / 100f;
-    }    
+    }   */ 
 }
