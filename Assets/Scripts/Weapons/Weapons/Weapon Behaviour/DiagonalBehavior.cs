@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DiagonalBehavior : MonoBehaviour
+public class DiagonalBehavior : DiagonalController
 {
     public float destroyAfterSeconds;
 
-    public void Start()
+    protected override void Start()
     {
         Destroy(gameObject, destroyAfterSeconds);
     }

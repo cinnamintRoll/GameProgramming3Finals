@@ -2,15 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AOEBehavior : MonoBehaviour
+public class AOEBehavior : AOEController
 {
 
 
     public GameObject aoeCircle;
-    public float destroyAfterSeconds;
 
-    protected virtual void Start()
+    protected override void Start()
     {
-        Destroy(gameObject, destroyAfterSeconds);
+        Destroy(gameObject, duration);
     }    
 }

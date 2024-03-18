@@ -15,6 +15,8 @@ public class WeaponController : MonoBehaviour
     float currentCooldown;
     float originalCooldownDuration;
     public int pierce;
+    public float duration;
+    public float AOE;
 
     protected PlayerMovement pm;
 
