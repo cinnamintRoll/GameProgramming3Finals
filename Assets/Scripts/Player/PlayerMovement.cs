@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector]
     public Vector2 lastMovedVector;
     private float originalMoveSpeed;
+    private bool isDodging = false;
+    public float dodgeSpeed = 10f;
 
     //References
     Rigidbody2D rb;
@@ -41,6 +43,17 @@ public class PlayerMovement : MonoBehaviour
 
         moveDir = new Vector2(moveX, moveY).normalized;
 
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            // Start the dodge
+            isDodging = true;
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            // End the dodge when the "Q" key is released
+            isDodging = false;
+        }
+
         if (moveDir.x != 0)
         {
             lastHorizontalVector = moveDir.x;
@@ -62,6 +75,17 @@ public class PlayerMovement : MonoBehaviour
     void Move()
     {
         rb.velocity = new Vector2(moveDir.x * moveSpeed, moveDir.y * moveSpeed);
+
+        if (isDodging)
+        {
+            rb.velocity = lastMovedVector.normalized * dodgeSpeed;
+            // You can also add other effects during the dodge (e.g., invincibility frames)
+        }
+        else
+        {
+            // Regular movement
+            rb.velocity = moveDir * moveSpeed;
+        }
     }
 
     public void ApplySlowDebuff(float slowFactor)
