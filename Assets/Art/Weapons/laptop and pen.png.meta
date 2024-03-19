@@ -121,7 +121,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: laptop and pen_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 28
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd556185bd3b08f4d83544023964475c
+      internalID: -362123171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laptop and pen_1
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 27
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a310e9d648f21994fb206c798a6a8ca8
+      internalID: -356802715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laptop and pen_2
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 27
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51783c3cea0bef48ab38d4c7d710ce7
+      internalID: 988733426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laptop and pen_3
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 26
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6db3fb57a2ad024eacaf998393502f5
+      internalID: -1772366044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laptop and pen_4
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 30
+        width: 40
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 217c86ef35aad454782a41e15782151b
+      internalID: -1132021873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +237,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      laptop and pen_0: -362123171
+      laptop and pen_1: -356802715
+      laptop and pen_2: 988733426
+      laptop and pen_3: -1772366044
+      laptop and pen_4: -1132021873
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
