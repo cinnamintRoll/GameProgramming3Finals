@@ -5605,6 +5605,66 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
+      propertyPath: propChances.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
+      propertyPath: propPrefabs.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
+      propertyPath: propChances.Array.data[0]
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
+      propertyPath: propChances.Array.data[1]
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
+      propertyPath: propChances.Array.data[2]
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
+      propertyPath: propChances.Array.data[3]
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
+      propertyPath: propChances.Array.data[4]
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
+      propertyPath: propChances.Array.data[5]
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
+      propertyPath: propChances.Array.data[6]
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
+      propertyPath: propChances.Array.data[7]
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
+      propertyPath: propPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 467613635921081216, guid: 40ca91694edaa544d9ddcbf97b58c035, type: 3}
+    - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
+      propertyPath: propPrefabs.Array.data[2]
+      value: 
+      objectReference: {fileID: 6822776863221990767, guid: 163885fdce0f51f4a9b0fdff8ccd47fe, type: 3}
+    - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
+      propertyPath: propPrefabs.Array.data[5]
+      value: 
+      objectReference: {fileID: 7542271512990857015, guid: 60b0a71605512d5439b907359d028450, type: 3}
+    - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
+      propertyPath: propPrefabs.Array.data[6]
+      value: 
+      objectReference: {fileID: 4712400813787814695, guid: 77d7eaa74d981604bac45a773dddb861, type: 3}
+    - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
+      propertyPath: propPrefabs.Array.data[7]
+      value: 
+      objectReference: {fileID: 8065440028807660871, guid: c7f623880b9c57045a77fa214d669ceb, type: 3}
     - target: {fileID: 7694844536613331971, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
       propertyPath: m_Name
       value: Terrain Chunk
