@@ -9,6 +9,9 @@ public class ExperienceSystem : MonoBehaviour
     private int level;
     private int experience;
     private int experienceToNextLevel;
+    public int XpMultiplier;
+
+    private Inventory playerInventory;
 
     // Use Awake for initialization
     void Awake()
@@ -21,6 +24,7 @@ public class ExperienceSystem : MonoBehaviour
     void Start()
     {
         // Your additional initialization code goes here
+        playerInventory = GameObject.FindWithTag("Player").GetComponent<Inventory>();
     }
 
     // Update is called once per frame
@@ -32,7 +36,19 @@ public class ExperienceSystem : MonoBehaviour
     public void AddExperience(int amount)
     {
 
-        experience += amount;
+        int Xpcalculated = (XpMultiplier * amount) + amount;
+        int itemIDToCheck = 13; // Replace 123 with the actual item ID you want to check
+        bool itemExists = playerInventory.CheckItem(itemIDToCheck);
+
+        if (itemExists)
+        {
+            experience += Xpcalculated;
+        }
+        else
+        {
+            experience += amount;
+        }
+
         if (experience >= experienceToNextLevel)
         {
             //if enough experience to level up

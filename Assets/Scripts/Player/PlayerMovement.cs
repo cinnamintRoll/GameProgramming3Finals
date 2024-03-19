@@ -73,4 +73,8 @@ public class PlayerMovement : MonoBehaviour
     {
         moveSpeed = originalMoveSpeed;
     }
+    public void PlayerSpeedUp(float amount)
+    {
+        moveSpeed += amount;
+    }
 }

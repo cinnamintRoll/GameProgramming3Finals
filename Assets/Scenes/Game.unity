@@ -985,17 +985,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3343256055788036806, guid: 30269708ff9335d478658a47967dffd0, type: 3}
   m_PrefabInstance: {fileID: 1574273514}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &247907682 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4494216568891897750, guid: ee593ccf13387dc4993d51d86333f571, type: 3}
-  m_PrefabInstance: {fileID: 562345567}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &289063837 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3637057288747662231, guid: ee593ccf13387dc4993d51d86333f571, type: 3}
@@ -1496,17 +1485,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 418784661}
   m_CullTransparentMesh: 1
---- !u!114 &429702851 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5895267588849267706, guid: ee593ccf13387dc4993d51d86333f571, type: 3}
-  m_PrefabInstance: {fileID: 562345567}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &456624153
 GameObject:
   m_ObjectHideFlags: 0
@@ -2243,17 +2221,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &677339752 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2953227947140447443, guid: ee593ccf13387dc4993d51d86333f571, type: 3}
-  m_PrefabInstance: {fileID: 562345567}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &678696510
 GameObject:
   m_ObjectHideFlags: 0
@@ -5756,18 +5723,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9213243475408195232, guid: 8968b56d4611c9942bbc62fc7cf60b51, type: 3}
-      propertyPath: healthBar
-      value: 
-      objectReference: {fileID: 677339752}
-    - target: {fileID: 9213243475408195232, guid: 8968b56d4611c9942bbc62fc7cf60b51, type: 3}
-      propertyPath: healthMax
-      value: 
-      objectReference: {fileID: 247907682}
-    - target: {fileID: 9213243475408195232, guid: 8968b56d4611c9942bbc62fc7cf60b51, type: 3}
-      propertyPath: healthCount
-      value: 
-      objectReference: {fileID: 429702851}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -22,4 +22,17 @@ public class PenController : WeaponController
             spawnedPen.GetComponent<PenBehaviour>().DirectionChecker(pm.lastMovedVector);   //Reference and set the direction}
         }
     }
+
+    public void DMGIncrease(float amount)
+    {
+        damage += amount;
+    }
+    public void CooldownDecrease(float amount)
+    {
+        currentCooldown -= amount;
+    }
+    public void ProjectileSpeedUp(float amount)
+    {
+        speed += amount;
+    }
 }

@@ -23,4 +23,17 @@ public class HomingController : WeaponController
             spawnedHoming.transform.position = transform.position;
         }
     }
+    public void DMGIncrease(float amount)
+    {
+        // Assuming 'damage' is a field representing player damage
+        damage += amount;
+    }
+    public void CooldownDecrease(float amount)
+    {
+        currentCooldown -= amount;
+    }
+    public void ProjectileSpeedUp(float amount)
+    {
+        speed += amount;
+    }
 }

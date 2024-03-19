@@ -12,7 +12,7 @@ public class WeaponController : MonoBehaviour
     public float damage;
     public float speed;
     public float cooldownDuration;
-    float currentCooldown;
+    public float currentCooldown;
     float originalCooldownDuration;
     public int pierce;
     public float duration;
