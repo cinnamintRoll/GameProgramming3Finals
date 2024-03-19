@@ -4912,23 +4912,22 @@ MonoBehaviour:
   - {fileID: 5516054829395970493}
   - {fileID: 8730390325908670791}
   propPrefabs:
-  - {fileID: 5152166477433576399, guid: 0851056f42981e5488ef5d15216ea387, type: 3}
-  - {fileID: 467613635921081216, guid: 40ca91694edaa544d9ddcbf97b58c035, type: 3}
-  - {fileID: 6822776863221990767, guid: 163885fdce0f51f4a9b0fdff8ccd47fe, type: 3}
-  - {fileID: 8590316213956845369, guid: 76529e7ff8456144f96fe86074973521, type: 3}
-  - {fileID: 5501777524067400157, guid: 31321c417a8f82644bef4b0a6837ef79, type: 3}
-  - {fileID: 7542271512990857015, guid: 60b0a71605512d5439b907359d028450, type: 3}
-  - {fileID: 4712400813787814695, guid: 77d7eaa74d981604bac45a773dddb861, type: 3}
-  - {fileID: 8065440028807660871, guid: c7f623880b9c57045a77fa214d669ceb, type: 3}
-  propChances:
-  - 0.05
-  - 0.05
-  - 0.2
-  - 0.2
-  - 0.2
-  - 0.001
-  - 0.001
-  - 0.001
+  - prefab: {fileID: 5152166477433576399, guid: 0851056f42981e5488ef5d15216ea387, type: 3}
+    weight: 5
+  - prefab: {fileID: 467613635921081216, guid: 40ca91694edaa544d9ddcbf97b58c035, type: 3}
+    weight: 5
+  - prefab: {fileID: 6822776863221990767, guid: 163885fdce0f51f4a9b0fdff8ccd47fe, type: 3}
+    weight: 10
+  - prefab: {fileID: 8590316213956845369, guid: 76529e7ff8456144f96fe86074973521, type: 3}
+    weight: 10
+  - prefab: {fileID: 5501777524067400157, guid: 31321c417a8f82644bef4b0a6837ef79, type: 3}
+    weight: 10
+  - prefab: {fileID: 7542271512990857015, guid: 60b0a71605512d5439b907359d028450, type: 3}
+    weight: 1
+  - prefab: {fileID: 4712400813787814695, guid: 77d7eaa74d981604bac45a773dddb861, type: 3}
+    weight: 1
+  - prefab: {fileID: 8065440028807660871, guid: c7f623880b9c57045a77fa214d669ceb, type: 3}
+    weight: 1
 --- !u!61 &5223689960476036085
 BoxCollider2D:
   m_ObjectHideFlags: 0

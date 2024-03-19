@@ -5635,15 +5635,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
       propertyPath: propChances.Array.data[5]
-      value: 0.001
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
       propertyPath: propChances.Array.data[6]
-      value: 0.001
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
       propertyPath: propChances.Array.data[7]
-      value: 0.001
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
       propertyPath: propPrefabs.Array.data[1]
@@ -5665,6 +5665,26 @@ PrefabInstance:
       propertyPath: propPrefabs.Array.data[7]
       value: 
       objectReference: {fileID: 8065440028807660871, guid: c7f623880b9c57045a77fa214d669ceb, type: 3}
+    - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
+      propertyPath: propPrefabs.Array.data[0].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
+      propertyPath: propPrefabs.Array.data[1].weight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
+      propertyPath: propPrefabs.Array.data[2].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
+      propertyPath: propPrefabs.Array.data[3].weight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
+      propertyPath: propPrefabs.Array.data[4].weight
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7694844536613331971, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
       propertyPath: m_Name
       value: Terrain Chunk
