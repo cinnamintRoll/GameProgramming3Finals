@@ -4714,7 +4714,7 @@ MonoBehaviour:
   - {fileID: 7694844536613331971, guid: 17d27bee02131584a845d90aa2f3866f, type: 3}
   - {fileID: 7694844536613331971, guid: 5663accbd1927c24d8994890c152ad1f, type: 3}
   - {fileID: 5388597834497316805, guid: 1c41c5b702dfa2f49befae058f2ca31d, type: 3}
-  - {fileID: 7694844536613331971, guid: 5a0c70ded0965d143a74402e5d94791c, type: 3}
+  - {fileID: 7694844536613331971, guid: 3c6b83a5de1219b4ba5177a487d32532, type: 3}
   player: {fileID: 605065451}
   checkerRadius: 0.2
   noTerrainPosition: {x: 0, y: 0, z: 0}
@@ -5611,7 +5611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
       propertyPath: propPrefabs.Array.size
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3675283749443850247, guid: 565436bcb7f227a409ce3d505c815e4c, type: 3}
       propertyPath: propChances.Array.data[0]
