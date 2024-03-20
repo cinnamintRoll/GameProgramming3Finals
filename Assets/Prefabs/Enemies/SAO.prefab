@@ -31,9 +31,9 @@ Transform:
   m_GameObject: {fileID: 8423902314363929865}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.461, y: -1.774, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -169,7 +169,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToThrow: {fileID: 6191613915454764487, guid: d4daf4a424e8d1445b0034071622b33f, type: 3}
   commentDamage: 10
-  player: {fileID: 0}
   throwForce: 15
   throwCooldown: 3
   detectionRadius: 20

@@ -32,9 +32,9 @@ Transform:
   m_GameObject: {fileID: 5332671204504362513}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.1063175, y: -0.8649428, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -225,7 +225,6 @@ MonoBehaviour:
   objectsToThrow: []
   commentDamage: 20
   questionDamage: 30
-  player: {fileID: 0}
   throwForce: 10
   throwCooldown: 3
   detectionRadius: 8
