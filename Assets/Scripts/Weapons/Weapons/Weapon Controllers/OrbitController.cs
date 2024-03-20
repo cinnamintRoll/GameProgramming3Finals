@@ -25,4 +25,16 @@ public class OrbitController : WeaponController
 
         }
     }
+    public void DMGIncrease(float amount)
+    {
+        damage += amount;
+    }
+    public void CooldownDecrease(float amount)
+    {
+        currentCooldown -= amount;
+    }
+    public void ProjectileSpeedUp(float amount)
+    {
+        speed += amount;
+    }
 }
