@@ -6,15 +6,23 @@ public class TextbookTerrors : MonoBehaviour
 {
     public GameObject objectToThrow;
     public float questionDamage = 3f;
-    public Transform player;
     public float throwForce = 10f;
     public float throwCooldown = 3f;
     public float detectionRadius = 8f;
     public LayerMask playerLayer;
 
-
+    private Transform player;
     private float lastThrowTime;
 
+    void Start()
+    {
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+
+        if (playerObject != null)
+        {
+            player = playerObject.transform;
+        }
+    }
 
     void Update()
     {

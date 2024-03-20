@@ -6,7 +6,6 @@ public class SAO : MonoBehaviour
 {
     public GameObject objectToThrow;
     public float commentDamage = 10f;
-    public Transform player;
     public float throwForce = 10f;
     public float throwCooldown = 3f;
     public float detectionRadius = 8f;
@@ -14,12 +13,20 @@ public class SAO : MonoBehaviour
     public int numberOfThrows = 3;
     public float defeatTimeout = 15f;
 
+    private Transform player;
     private float lastThrowTime;
     private bool hasBeenDefeated;
 
 
+
     void Start()
     {
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+
+        if (playerObject != null)
+        {
+            player = playerObject.transform;
+        }
         Invoke("Fail", defeatTimeout);    
     }
 

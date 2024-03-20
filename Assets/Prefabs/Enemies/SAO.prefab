@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 2445070351211792346}
   - component: {fileID: 8055635828661790310}
   - component: {fileID: 6045456407214453859}
-  - component: {fileID: 5525572434961117631}
   - component: {fileID: 7719350813811365569}
+  - component: {fileID: 8459916443405619257}
+  - component: {fileID: -3092144780216782}
+  - component: {fileID: -209067442883843788}
   m_Layer: 0
   m_Name: SAO
   m_TagString: Untagged
@@ -108,19 +110,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5525572434961117631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8423902314363929865}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db74aeeba2d4d14da5934b2c8ce63f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 1
 --- !u!61 &7719350813811365569
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -166,3 +155,59 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.36, y: 2.48}
   m_EdgeRadius: 0
+--- !u!114 &8459916443405619257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8423902314363929865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5a4b433bad58ec41bb7d8086dbeb6e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToThrow: {fileID: 6191613915454764487, guid: d4daf4a424e8d1445b0034071622b33f, type: 3}
+  commentDamage: 10
+  player: {fileID: 0}
+  throwForce: 15
+  throwCooldown: 3
+  detectionRadius: 20
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  numberOfThrows: 6
+  defeatTimeout: 15
+--- !u!114 &-3092144780216782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8423902314363929865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e65baf7a3b7c9944aa83c07e9accb69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
+  detectionRadius: 8
+  idleTime: 2
+  damage: 15
+--- !u!114 &-209067442883843788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8423902314363929865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 962a7258f7b45e64fb2eef69e84cc9bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseHP: 10
+  maxHP: 0
+  currentHP: 0
+  expPrefab: {fileID: 723543119677061658, guid: 487b2fab5127b764f8743394ea55bcad, type: 3}
+  expValue: 5

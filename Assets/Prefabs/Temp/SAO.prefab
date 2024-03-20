@@ -198,12 +198,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToThrow: {fileID: 6191613915454764487, guid: d4daf4a424e8d1445b0034071622b33f, type: 3}
   commentDamage: 10
-  player: {fileID: 0}
   throwForce: 10
   throwCooldown: 3
   detectionRadius: 8
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   numberOfThrows: 3
   defeatTimeout: 15

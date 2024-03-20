@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8736591345954960287}
   - component: {fileID: 4438101188210725487}
   - component: {fileID: 3515914574240016535}
+  - component: {fileID: -1069030543679266232}
   m_Layer: 0
   m_Name: The Big H
   m_TagString: Enemy
@@ -209,3 +210,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.52, y: 2.52, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-1069030543679266232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5332671204504362513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 582afd08c21aa3a40b09397586aeca78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToThrow: []
+  commentDamage: 20
+  questionDamage: 30
+  player: {fileID: 0}
+  throwForce: 10
+  throwCooldown: 3
+  detectionRadius: 8
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  numberOfThrows: 5

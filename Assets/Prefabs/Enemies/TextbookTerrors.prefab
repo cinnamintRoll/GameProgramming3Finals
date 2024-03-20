@@ -196,7 +196,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e31847f941a3a446a88330a0e1c4666, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToThrow: {fileID: 7176085248846596325, guid: f1c3b64e49d39ef47a4b6f9c5729e291, type: 3}
+  objectToThrow: {fileID: 23595755681680562, guid: f1c3b64e49d39ef47a4b6f9c5729e291, type: 3}
+  questionDamage: 3
   player: {fileID: 0}
   throwForce: 10
   throwCooldown: 1.7

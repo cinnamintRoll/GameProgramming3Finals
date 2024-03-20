@@ -3,20 +3,21 @@ using UnityEngine;
 public class AdviserAnomaly : MonoBehaviour
 {
     public float defeatTimeout = 15f;
-    public GameObject player;
-
+    
+    private GameObject player;
     private PlayerHP playerHP;
     private bool hasBeenDefeated;
 
     void Start()
     {
-        playerHP = player.GetComponent<PlayerHP>(); // Get the PlayerHP component from the player GameObject
-        Invoke("Fail", defeatTimeout); // Invoke Fail once after defeatTimeout seconds
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerHP = player.GetComponent<PlayerHP>(); 
+        Invoke("Fail", defeatTimeout); 
     }
 
     void Fail()
     {
-        if (!hasBeenDefeated) // Check if the enemy hasn't been defeated yet
+        if (!hasBeenDefeated) 
         {
             playerHP.ReduceToMinimumHealth();
         }
