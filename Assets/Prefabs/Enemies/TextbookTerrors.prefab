@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8524079638795771495}
   - component: {fileID: 574105812392666112}
   - component: {fileID: 8731884420186011449}
+  - component: {fileID: -2875196917819755394}
   m_Layer: 0
   m_Name: TextbookTerrors
   m_TagString: Untagged
@@ -32,8 +33,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.999, y: 0.908, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -78,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 442610382, guid: b40a989ae86fba34db4d734bc4dd1045, type: 3}
   m_Color: {r: 1, g: 0.8468422, b: 0.7216981, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -198,10 +199,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToThrow: {fileID: 23595755681680562, guid: f1c3b64e49d39ef47a4b6f9c5729e291, type: 3}
   questionDamage: 3
-  player: {fileID: 0}
   throwForce: 10
   throwCooldown: 1.7
   detectionRadius: 8
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
+--- !u!95 &-2875196917819755394
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4932806220751892202}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 69be2778f3554a94e925c7738c1baccc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

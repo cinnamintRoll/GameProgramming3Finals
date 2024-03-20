@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
@@ -17,6 +14,8 @@ public class EnemyAI : MonoBehaviour
     private Vector2 idlePosition;
     private bool isIdle = false;
 
+    // Animator reference
+    private Animator animator;
 
     #region Movement
     private enum State
@@ -33,6 +32,9 @@ public class EnemyAI : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         currentState = State.Idle;
         idlePosition = transform.position;
+
+        // Get the Animator component
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -47,13 +49,13 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    
-
     void IdleState()
     {
         if (Vector2.Distance(transform.position, player.position) <= detectionRadius)
         {
             currentState = State.Chase;
+            // Set the animator parameter to false when not idle
+            animator.SetBool("IsIdle", false);
             return;
         }
 
@@ -61,6 +63,8 @@ public class EnemyAI : MonoBehaviour
         {
             isIdle = true;
             Invoke("ReturnToIdle", idleTime);
+            // Set the animator parameter to true when idle
+            animator.SetBool("IsIdle", true);
         }
     }
 
@@ -69,6 +73,7 @@ public class EnemyAI : MonoBehaviour
         currentState = State.Idle;
         isIdle = false;
     }
+
     void ChaseState()
     {
         Vector2 direction = (player.position - transform.position).normalized;
@@ -76,25 +81,19 @@ public class EnemyAI : MonoBehaviour
 
         if (direction.x < 0)
         {
-            sprite.flipX = true; 
+            sprite.flipX = true;
         }
         else
         {
-            sprite.flipX = false; 
+            sprite.flipX = false;
         }
 
         if (Vector2.Distance(transform.position, player.position) > detectionRadius)
         {
             currentState = State.Idle;
+            // Set the animator parameter to false when not idle
+            animator.SetBool("IsIdle", false);
         }
     }
-
-    /*void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, detectionRadius);
-    }*/
     #endregion
-
-    
 }

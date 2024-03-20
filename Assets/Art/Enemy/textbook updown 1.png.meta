@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9aa57c57efc30294fbdf8d850cb39623
+guid: 42e68803973b03249a5bb720ac585bc3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -70,9 +70,9 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 0
+    resizeAlgorithm: 1
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,169 +123,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ALLKILL_Star-Sheet_0
+      name: textbook updown_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 44
-        width: 8
-        height: 8
+        x: 69
+        y: 0
+        width: 44
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c13ab837a5424443b4b91f3aa719ab3
-      internalID: 685040798
+      spriteID: c985f581f11d7b84d95483886d365a4d
+      internalID: 901636116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ALLKILL_Star-Sheet_1
+      name: textbook updown_1
       rect:
         serializedVersion: 2
-        x: 43
-        y: 43
-        width: 10
-        height: 10
+        x: 115
+        y: 0
+        width: 44
+        height: 63
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 021b8ada901f3514c97fe5362c1d5c09
-      internalID: -864257097
+      spriteID: d347ae44e276bf740a0b0112527b7f07
+      internalID: -1325156662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ALLKILL_Star-Sheet_2
+      name: textbook updown_2
       rect:
         serializedVersion: 2
-        x: 73
-        y: 42
-        width: 14
-        height: 12
+        x: 162
+        y: 0
+        width: 44
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b52cc8d0cf5f54d4db376d0b8ec43bcc
-      internalID: 545671578
+      spriteID: 47d53eed02659ce4e8ab64c1f819213a
+      internalID: 616893885
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ALLKILL_Star-Sheet_3
+      name: textbook updown_3
       rect:
         serializedVersion: 2
-        x: 6
-        y: 8
-        width: 19
-        height: 17
+        x: 210
+        y: 0
+        width: 44
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e54760c843fa784495ddf4d5ace6669
-      internalID: 1500755197
+      spriteID: 23c75646335317548918e651355f9370
+      internalID: 1711740298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ALLKILL_Star-Sheet_4
+      name: textbook updown_4
       rect:
         serializedVersion: 2
-        x: 37
-        y: 7
-        width: 21
-        height: 19
+        x: 267
+        y: 1
+        width: 44
+        height: 63
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb3e1e248c34c77489946c464adf1db6
-      internalID: 917526367
+      spriteID: 4bc511a59258b5a43beeeeb3f969fbda
+      internalID: -1606132659
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ALLKILL_Star-Sheet_5
+      name: textbook updown_5
       rect:
         serializedVersion: 2
-        x: 53
-        y: 21
-        width: 5
-        height: 5
+        x: 314
+        y: 1
+        width: 45
+        height: 63
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04f374e2c504bc84d9f7187883cb4b6c
-      internalID: 577523589
+      spriteID: c7be7617de0d09f40b598d7f0ff504b1
+      internalID: -506589687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ALLKILL_Star-Sheet_6
+      name: textbook updown_6
       rect:
         serializedVersion: 2
-        x: 70
-        y: 6
-        width: 21
-        height: 19
+        x: 363
+        y: 1
+        width: 45
+        height: 62
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e30c65af61854c49967010690a90c56
-      internalID: -1775791340
+      spriteID: 4c2e1f2c1368f1d4f89d5ff9f27388e8
+      internalID: 620349849
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ALLKILL_Star-Sheet_7
+      name: textbook updown_7
       rect:
         serializedVersion: 2
-        x: 103
-        y: 5
-        width: 21
-        height: 20
+        x: 411
+        y: 1
+        width: 45
+        height: 62
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2109dda615532e84aa4c88b740d8b47a
-      internalID: -1537652779
+      spriteID: 4e6633abf27807249a723a135278f1f8
+      internalID: -2105942917
       vertices: []
       indices: 
       edges: []
@@ -301,14 +301,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ALLKILL_Star-Sheet_0: 685040798
-      ALLKILL_Star-Sheet_1: -864257097
-      ALLKILL_Star-Sheet_2: 545671578
-      ALLKILL_Star-Sheet_3: 1500755197
-      ALLKILL_Star-Sheet_4: 917526367
-      ALLKILL_Star-Sheet_5: 577523589
-      ALLKILL_Star-Sheet_6: -1775791340
-      ALLKILL_Star-Sheet_7: -1537652779
+      textbook updown_0: 901636116
+      textbook updown_1: -1325156662
+      textbook updown_2: 616893885
+      textbook updown_3: 1711740298
+      textbook updown_4: -1606132659
+      textbook updown_5: -506589687
+      textbook updown_6: 620349849
+      textbook updown_7: -2105942917
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
