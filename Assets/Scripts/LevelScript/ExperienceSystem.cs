@@ -9,7 +9,7 @@ public class ExperienceSystem : MonoBehaviour
     private int level;
     private int experience;
     private int experienceToNextLevel;
-    public int XpMultiplier;
+    //public int XpMultiplier;
 
     private Inventory playerInventory;
 
@@ -24,7 +24,7 @@ public class ExperienceSystem : MonoBehaviour
     void Start()
     {
         // Your additional initialization code goes here
-        playerInventory = GameObject.FindWithTag("Player").GetComponent<Inventory>();
+        //playerInventory = GameObject.FindWithTag("Player").GetComponent<Inventory>();
     }
 
     // Update is called once per frame
@@ -36,7 +36,7 @@ public class ExperienceSystem : MonoBehaviour
     public void AddExperience(int amount)
     {
 
-        int Xpcalculated = (XpMultiplier * amount) + amount;
+        /*int Xpcalculated = (XpMultiplier * amount) + amount;
         int itemIDToCheck = 13; // Replace 123 with the actual item ID you want to check
         bool itemExists = playerInventory.CheckItem(itemIDToCheck);
 
@@ -55,6 +55,16 @@ public class ExperienceSystem : MonoBehaviour
             level++;
             experience -= experienceToNextLevel;
             if (OnLevelChanged != null) OnLevelChanged(this, EventArgs.Empty);
+        }
+        if (OnExperienceChanged != null) OnExperienceChanged(this, EventArgs.Empty);*/
+
+        experience += amount;
+        if(experience >= experienceToNextLevel)
+        {
+            level++;
+            experience -= experienceToNextLevel;
+            if(OnLevelChanged != null)  OnLevelChanged(this, EventArgs.Empty);
+
         }
         if (OnExperienceChanged != null) OnExperienceChanged(this, EventArgs.Empty);
     }
