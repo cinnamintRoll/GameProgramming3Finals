@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5664263278251395157}
   - component: {fileID: 4744158263631468194}
   - component: {fileID: 7569448971701299785}
+  - component: {fileID: 8844939293167152113}
   - component: {fileID: 2190475361317687592}
   m_Layer: 0
   m_Name: Assignment
@@ -204,9 +205,22 @@ MonoBehaviour:
   baseHP: 3
   maxHP: 3
   currentHP: 0
-  playerDMG: 3
   expPrefab: {fileID: 723543119677061658, guid: 487b2fab5127b764f8743394ea55bcad, type: 3}
   expValue: 2
+--- !u!114 &8844939293167152113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764904213073832366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eba0c89fcb857b4b90149694b70d159, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  miniAssignments: {fileID: 5213477111711886575, guid: 57e97694831f1264eb37aee87d8d476a, type: 3}
+  spawnDistance: 1
 --- !u!61 &2190475361317687592
 BoxCollider2D:
   m_ObjectHideFlags: 0
