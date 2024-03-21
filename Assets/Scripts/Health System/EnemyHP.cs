@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyHP : HealthSystem
 {
-
+    public float playerDMG = 3;
     
     public GameObject expPrefab;
     public int expValue = 5;
@@ -40,7 +40,8 @@ public class EnemyHP : HealthSystem
 
         if (other.CompareTag("Bullet"))
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            TakeDamage(playerDMG);
             Debug.Log("Enemy hit");
         }
     }
