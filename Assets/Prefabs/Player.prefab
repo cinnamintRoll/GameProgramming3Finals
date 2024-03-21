@@ -404,6 +404,7 @@ Transform:
   - {fileID: 620752753519477183}
   - {fileID: 5467001394692651913}
   - {fileID: 3611916033538320880}
+  - {fileID: 787629306869346684}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7340106218598607296
@@ -816,6 +817,94 @@ MonoBehaviour:
   fireController: {fileID: 3016951080084081172}
   playerInventory: {fileID: -1084256023495633803}
   amount: 0
+--- !u!1 &5130205669725435312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 787629306869346684}
+  - component: {fileID: 3238472885646798261}
+  m_Layer: 3
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &787629306869346684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5130205669725435312}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8330925472150337815}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3238472885646798261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5130205669725435312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a3453aa72260d94099d0238dfd38fcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyTypes:
+  - typeName: boss
+    prefab: {fileID: 7993902625129032072, guid: 27b5d892b56da65409c352f81a44f5a0, type: 3}
+    spawnRate: 3
+  - typeName: basic
+    prefab: {fileID: 1764904213073832366, guid: cbc6859a11457e7429dcf27d2d791886, type: 3}
+    spawnRate: 3
+  - typeName: basic
+    prefab: {fileID: 5213477111711886575, guid: 57e97694831f1264eb37aee87d8d476a, type: 3}
+    spawnRate: 3
+  - typeName: basic
+    prefab: {fileID: 371830276196710776, guid: a7c1fe220eff1974e9b01eb9353e9ee4, type: 3}
+    spawnRate: 3
+  - typeName: basic
+    prefab: {fileID: 6191613915454764487, guid: d4daf4a424e8d1445b0034071622b33f, type: 3}
+    spawnRate: 3
+  - typeName: boss
+    prefab: {fileID: 6492776789242303022, guid: e613f6d7962c4da4b9471acb30b62d75, type: 3}
+    spawnRate: 3
+  - typeName: basic
+    prefab: {fileID: 743824343570163684, guid: aecb2f1a1476bfc4391c3f3ae8d9d05c, type: 3}
+    spawnRate: 3
+  - typeName: basic
+    prefab: {fileID: 23595755681680562, guid: f1c3b64e49d39ef47a4b6f9c5729e291, type: 3}
+    spawnRate: 3
+  - typeName: boss
+    prefab: {fileID: 8423902314363929865, guid: 72f8d0aa949aaa04ba88fc839e732759, type: 3}
+    spawnRate: 3
+  - typeName: basic
+    prefab: {fileID: 3667880494643730979, guid: e8596863e0d7064488e58b94fb1f07f8, type: 3}
+    spawnRate: 3
+  - typeName: basic
+    prefab: {fileID: 4932806220751892202, guid: b392130a09a63174ea2bcdfca5d7589f, type: 3}
+    spawnRate: 3
+  - typeName: boss
+    prefab: {fileID: 5332671204504362513, guid: 2b8a872ea16666e4185289a53fbb66d3, type: 3}
+    spawnRate: 3
+  baseSpawnRate: 5
+  spawnRadius: 5
+  spawnRateMultiplier: 0.04
+  multiplierInterval: 30
+  playerTransform: {fileID: 8330925472150337815}
+  playerOffset: {x: 0, y: 0}
+  enemyContainer: {fileID: 925144898245380269, guid: d8143e11ad8dce041867517325598954, type: 3}
 --- !u!1 &5595362111020897921
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,6 +14,7 @@ public class EnemyHP : HealthSystem
         base.Start();
     }
 
+
     public override void TakeDamage(float dmg)
     {
         base.TakeDamage(dmg);
@@ -36,9 +37,10 @@ public class EnemyHP : HealthSystem
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("TempDMG"))
+
+        if (other.CompareTag("Bullet"))
         {
-            TakeDamage(1);
+            Destroy(gameObject);
         }
     }
 

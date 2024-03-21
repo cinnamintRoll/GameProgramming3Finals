@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.003315, y: 0.8353579, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.9534, y: 2.9534, z: 2.9534}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -97,5 +97,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85adcada59182bd4c886863d456c30be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
+  damage: 0
+  speed: 0
+  cooldownDuration: 0
+  currentCooldown: 0
+  pierce: 0
+  duration: 0
+  AOE: 0
   aoeCircle: {fileID: 4860554433900299691}
-  destroyAfterSeconds: 2

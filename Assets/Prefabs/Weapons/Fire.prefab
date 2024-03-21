@@ -47,7 +47,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66f4fa14c52ef90468114cbae3795541, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
+  damage: 0
   speed: 5
+  cooldownDuration: 0
+  currentCooldown: 0
+  pierce: 0
+  duration: 0
+  AOE: 0
   destroyAfterSeconds: 2
 --- !u!1 &4603876391827784371
 GameObject:
@@ -75,8 +82,8 @@ Transform:
   m_GameObject: {fileID: 4603876391827784371}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.135, y: 0.462, z: 0.008848045}
-  m_LocalScale: {x: 0.3143848, y: 0.30792478, z: 1}
+  m_LocalPosition: {x: -1.8047, y: 0.46052, z: 0.008848045}
+  m_LocalScale: {x: 0.62559426, y: 0.6127395, z: 1.9899}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5054470058361024528}
@@ -159,8 +166,8 @@ Transform:
   m_GameObject: {fileID: 4647676934737637639}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.218, y: 0.474, z: 0.008848045}
-  m_LocalScale: {x: 0.3143848, y: 0.30792478, z: 1}
+  m_LocalPosition: {x: 0.8877, y: 0.48439, z: 0.008848045}
+  m_LocalScale: {x: 0.62559426, y: 0.6127395, z: 1.9899}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5054470058361024528}
@@ -243,8 +250,8 @@ Transform:
   m_GameObject: {fileID: 8417418405197746333}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.461, y: 0.453, z: 0.008848045}
-  m_LocalScale: {x: 0.3143848, y: 0.30792478, z: 1}
+  m_LocalPosition: {x: -0.46347, y: 0.44261, z: 0.008848045}
+  m_LocalScale: {x: 0.62559426, y: 0.6127395, z: 1.9899}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5054470058361024528}
