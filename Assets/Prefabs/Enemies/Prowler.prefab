@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 7213987589389691751}
   - component: {fileID: 5269860516325573816}
   - component: {fileID: 3923153533161025094}
-  - component: {fileID: 2986250744816410540}
   m_Layer: 0
   m_Name: Prowler
   m_TagString: Enemy
@@ -205,6 +204,7 @@ MonoBehaviour:
   baseHP: 3
   maxHP: 3
   currentHP: 0
+  playerDMG: 3
   expPrefab: {fileID: 723543119677061658, guid: 487b2fab5127b764f8743394ea55bcad, type: 3}
   expValue: 5
 --- !u!114 &3923153533161025094
@@ -221,48 +221,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slowFactor: 0.5
   slowDuration: 3
---- !u!61 &2986250744816410540
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 743824343570163684}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.4, y: 2.48}
-    newSize: {x: 2.4, y: 2.48}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.4, y: 2.48}
-  m_EdgeRadius: 0
