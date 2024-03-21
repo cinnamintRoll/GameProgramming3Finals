@@ -154,7 +154,7 @@ MonoBehaviour:
   moveSpeed: 1
   detectionRadius: 5
   idleTime: 2
-  damage: 0
+  damage: 3
 --- !u!70 &7213987589389691751
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
