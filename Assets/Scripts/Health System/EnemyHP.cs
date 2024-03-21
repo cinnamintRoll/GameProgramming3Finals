@@ -41,6 +41,7 @@ public class EnemyHP : HealthSystem
         if (other.CompareTag("Bullet"))
         {
             Destroy(gameObject);
+            Debug.Log("Enemy hit");
         }
     }
 

@@ -12,7 +12,7 @@ public class Coffee : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-            player.TakeDamage(healAmount);
+            player.Heal(healAmount);
             Destroy(gameObject);
         }
     }
