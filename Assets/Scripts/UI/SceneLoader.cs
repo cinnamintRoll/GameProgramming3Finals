@@ -31,6 +31,7 @@ public class SceneLoader : MonoBehaviour
         //Gameover.SetActive(false);
         //Time.timeScale = 1f;
         SceneManager.LoadScene("Game");
+        Time.timeScale = 0f;
     }
 
     public void LoadOptionsScene()

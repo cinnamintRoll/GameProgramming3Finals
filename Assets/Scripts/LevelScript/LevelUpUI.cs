@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using UnityEditor.UI;
+//using UnityEditor.UI;
 using UnityEngine;
 
 public class LevelUpUI : MonoBehaviour
@@ -11,8 +11,8 @@ public class LevelUpUI : MonoBehaviour
     public int itemID;
     public int quantity = 1;
 
-    public TextMeshProUGUI buttonText;
-    public GameObject buttonObject;
+    //public TextMeshProUGUI buttonText;
+    //public GameObject buttonObject;
 
     // Start is called before the first frame update
     void Start()
