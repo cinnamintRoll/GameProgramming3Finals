@@ -4223,8 +4223,6 @@ MonoBehaviour:
   itemName: 
   itemID: 0
   quantity: 1
-  buttonText: {fileID: 0}
-  buttonObject: {fileID: 0}
 --- !u!1 &831053532
 GameObject:
   m_ObjectHideFlags: 0
@@ -5726,7 +5724,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1019011779}
   - component: {fileID: 1019011780}
-  - component: {fileID: 1019011781}
   m_Layer: 5
   m_Name: LevelWindow
   m_TagString: Untagged
@@ -5769,23 +5766,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   experience5Btn: {fileID: 0}
---- !u!114 &1019011781
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019011778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81519a449d293b94d917a2e0b59191fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  XpMultiplier: 0
-  LevelupUI: {fileID: 0}
-  option1: {fileID: 0}
-  option2: {fileID: 0}
-  option3: {fileID: 0}
 --- !u!1 &1029935122
 GameObject:
   m_ObjectHideFlags: 0
