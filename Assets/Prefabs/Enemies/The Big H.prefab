@@ -222,13 +222,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 582afd08c21aa3a40b09397586aeca78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectsToThrow: []
-  commentDamage: 20
-  questionDamage: 30
+  objectsToThrow:
+  - {fileID: 6191613915454764487, guid: d4daf4a424e8d1445b0034071622b33f, type: 3}
+  - {fileID: 23595755681680562, guid: f1c3b64e49d39ef47a4b6f9c5729e291, type: 3}
+  commentDamage: 5
+  questionDamage: 5
   throwForce: 10
   throwCooldown: 3
   detectionRadius: 8
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   numberOfThrows: 5

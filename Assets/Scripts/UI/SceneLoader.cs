@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    public GameObject MainMenu;
+    /*public GameObject MainMenu;
     public GameObject UI;
     public GameObject Gameover;
     public void Start()
@@ -17,17 +17,20 @@ public class SceneLoader : MonoBehaviour
     public void Update()
     {
         
-    }
+    }*/
+
+
     public void LoadMainMenu()
     {
         SceneManager.LoadScene("Main Menu"); 
     }
     public void LoadGameScene()
     {
-        MainMenu.SetActive(false);
-        UI.SetActive(true);
-        Gameover.SetActive(false);
-        Time.timeScale = 1f;
+        //MainMenu.SetActive(false);
+        //UI.SetActive(true);
+        //Gameover.SetActive(false);
+        //Time.timeScale = 1f;
+        SceneManager.LoadScene("Game");
     }
 
     public void LoadOptionsScene()

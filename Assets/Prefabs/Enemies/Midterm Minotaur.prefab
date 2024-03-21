@@ -104,7 +104,7 @@ MonoBehaviour:
   moveSpeed: 1.7
   detectionRadius: 10
   idleTime: 2
-  damage: 10
+  damage: 4
 --- !u!114 &5843891648074113523
 MonoBehaviour:
   m_ObjectHideFlags: 0

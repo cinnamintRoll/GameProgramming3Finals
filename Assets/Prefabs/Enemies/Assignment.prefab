@@ -127,7 +127,7 @@ MonoBehaviour:
   moveSpeed: 1.5
   detectionRadius: 5
   idleTime: 2
-  damage: 1
+  damage: 4
 --- !u!50 &5664263278251395157
 Rigidbody2D:
   serializedVersion: 4
